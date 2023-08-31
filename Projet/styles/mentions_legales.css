@@ -1,0 +1,166 @@
+@font-face {
+    font-family: "Anson";
+    src: url("../fonts/anson.ttf") format("truetype");
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: darkgrey;
+    font-family:system-ui;
+    display: grid;
+    grid-template-rows: repeat(1fr, 4);
+    max-width: 100%;
+}
+
+header {
+    font-family: Anson;
+    font-weight: bolder;
+    padding: 1.5vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000E38;
+    color:#EEEEEE;
+    font-size: 2em;
+    grid-row: 1/2;
+}
+
+#lang a {
+    text-decoration: none;
+    margin-right: 8px;
+}
+
+nav {
+    background-color: #339999;
+    display: flex;
+    justify-content: space-between;
+    grid-row: 2/3;
+}
+
+nav div {
+    padding: 10px 0 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav a {
+    text-decoration: none;
+    color: #EEEEEE;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    position: relative;
+    text-decoration: none;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    padding: 0 8px;
+}
+
+@media screen and (max-width: 700px) {
+    nav a {
+        font-size: 88%;
+    }
+}
+
+nav a:link {
+    text-decoration: none;
+  }
+
+  nav a:visited {
+    text-decoration: none;
+}
+
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav a:after{
+    content: "";
+    position: absolute;
+    background-color: #EEEEEE;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+nav a:hover{
+    color: #EEEEEE;
+}
+
+nav a:hover:after {
+    width: 100%;
+}
+
+#logo_header {
+    width: 2.8em;
+    height: 2.8em;
+}
+
+main {
+    background-color: #DDDDDD;
+}
+
+main div {
+    margin: 15px 20vw;
+    font-size: 120%;
+}
+
+main h2 {
+    font-family: "Anson";
+    text-align: center;
+    text-decoration: underline;
+}
+
+footer {
+    padding: 10px;
+    text-align: center;
+    background-color: #000E38;
+    color:white;
+    grid-row: 4/5;
+}
+
+footer #partenaires {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+footer #linkedin{
+    padding: 30px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+footer #linkedin div {
+    display: flex;
+    flex-direction: column;
+}
+
+footer a {
+    text-decoration: none;
+    color: #DDDDDD;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+#decathlon {
+    width: 15vh;
+}
+
+#artois {
+    width: 10vh;
+}
+
+#nausicaa {
+    width: 15vh;
+}

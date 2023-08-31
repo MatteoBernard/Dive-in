@@ -1,0 +1,130 @@
+@font-face {
+    font-family: "Anson";
+    src: url("../fonts/anson.ttf") format("truetype");
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    font-family: system-ui;
+    font-weight: bolder;
+    color: #EDEDED;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),  url(../images/tortue.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+nav{
+    background-color: #000E38;
+    opacity: 0.75;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo{
+    width: 2.5em;
+    margin: 5px;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 90vh;
+}
+
+main #titre {
+    font-family: Anson;
+    font-size: 5em;
+    font-weight: bold;
+    color: #EEEEEE;
+}
+
+a {
+    color: #EDEDED;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+a:link {
+    text-decoration: none;
+  }
+
+a:visited {
+    text-decoration: none;
+}
+
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#liens {
+    display: flex;
+    justify-content: center;
+}
+
+#liens a {
+    margin-left: 3vw;
+    margin-right: 3vw;
+    position: relative;
+    text-decoration: none;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    padding: 0 10px;
+}
+
+#liens a:after{
+    content: "";
+    position: absolute;
+    background-color: #EEEEEE;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+#liens a:hover{
+    color: #EEEEEE;
+}
+
+#liens a:hover:after {
+    width: 100%;
+}
+
+#lang a {
+    margin-right: 8px;
+}
+
+#logs {
+    display: flex;
+}
+
+#logs a {
+    background-color: transparent;
+    border: 1.5px solid #EEEEEE;
+    border-radius: 15px;
+    box-sizing: border-box;
+    display: inline-block;
+    margin: 5px;
+    padding: 15px;
+    text-align: center;
+    touch-action: manipulation;
+}
+
+#logs a:hover {
+    color: #000E38;
+    background-color: rgba(238, 238, 238, 0.8);
+}
+

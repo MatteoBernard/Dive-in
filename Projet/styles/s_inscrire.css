@@ -1,0 +1,150 @@
+@font-face {
+  font-family: "Anson";
+  src: url("../fonts/anson.ttf") format("truetype");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui;
+  display: grid;
+  grid-template-rows: repeat(1fr, 4);
+  max-width: 100%;
+}
+
+header {
+  font-family: Anson;
+  font-weight: bolder;
+  padding: 1.5vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000e38;
+  color: #eeeeee;
+  font-size: 2em;
+  grid-row: 1/2;
+}
+
+#lang a {
+  text-decoration: none;
+  margin-right: 8px;
+}
+
+#logo_header {
+  width: 2.8em;
+  height: 2.8em;
+}
+
+main {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../images/tortue.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+}
+
+label {
+  display: block;
+  font-size: 110%;
+  text-align: justify;
+}
+
+form {
+  border: 3px solid #000e38;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 45vw;
+  background-color: #eeeeee;
+  font-size: 110%;
+  padding: 10px;
+  margin: 10px auto;
+}
+
+input,
+label,
+form p {
+  margin: 5px 20px;
+}
+
+#mistake {
+  text-decoration: none;
+}
+
+#mistake:hover {
+  text-decoration: underline;
+}
+
+input {
+  width: 15vw;
+  font-size: 110%;
+}
+
+#bouton a {
+  background-color: transparent;
+  border: 1.5px solid #000000;
+  border-radius: 15px;
+  box-sizing: border-box;
+  display: inline-block;
+  margin: 5px;
+  padding: 15px;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+
+#bouton a:hover {
+  color: #000e38;
+  text-decoration: underline;
+  background-color: white;
+}
+
+footer {
+  padding: 10px;
+  text-align: center;
+  background-color: #000e38;
+  color: white;
+  grid-row: 4/5;
+}
+
+footer #partenaires {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer #linkedin {
+  padding: 30px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+footer #linkedin div {
+  display: flex;
+  flex-direction: column;
+}
+
+footer a {
+  text-decoration: none;
+  color: #dddddd;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+#decathlon {
+  width: 15vh;
+}
+
+#artois {
+  width: 10vh;
+}
+
+#nausicaa {
+  width: 15vh;
+}
